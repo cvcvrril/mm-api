@@ -1,9 +1,9 @@
 
 h
-java:S1192"FDefine a constant instead of duplicating this literal "Movie" 5 times.(²íù¹úÿÿÿÿ8ú†²­Ä1
+java:S1192"FDefine a constant instead of duplicating this literal "Movie" 8 times.(²íù¹úÿÿÿÿ8îŒàÊÄ1
 ?
-java:S2386"Make this member "protected".(Å”‹»úÿÿÿÿ8ı†²­Ä1
+java:S2386"Make this member "protected".(Å”‹»úÿÿÿÿ8óŒàÊÄ1
 :
-java:S2386"Make this member "protected".(Ø¿‡8ó­Ã±Ä1
+java:S2386"Make this member "protected".(Ø¿‡8óŒàÊÄ1
 W
-java:S1118	":Add a private constructor to hide the implicit public one.(œâ¢ò8ı†²­Ä1
+java:S1118	":Add a private constructor to hide the implicit public one.(œâ¢ò8ôŒàÊÄ1

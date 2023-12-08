@@ -53,6 +53,8 @@ public class RestMedia {
         return serviceMedia.getByYear(yearParam).get();
     }
 
+    /*http://localhost:8080/mmapi-1.0-SNAPSHOT/api/media/random*/
+
     @GET
     @Path("/random")
     public Media getRandom(){
