@@ -12,6 +12,5 @@ public interface DaoCharacter {
     Either<ApiError, Character> getById(int id);
     Either<ApiError, Character> getByName(String name);
     Either<ApiError, List<Character>> getByState(boolean state);
-
-
+    Either<ApiError, List<Character>> getByOcupation(String ocupation);
 }

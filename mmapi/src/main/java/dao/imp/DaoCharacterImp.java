@@ -55,7 +55,28 @@ public class DaoCharacterImp implements DaoCharacter {
 
     @Override
     public Either<ApiError, List<Character>> getByState(boolean state) {
-        return null;
+        Either<ApiError, List<Character>> res;
+        try {
+            List<Character> characters = StaticLists.characters.stream().filter(character -> character.isState() == state).toList();
+            res = Either.right(characters);
+        } catch (Exception e) {
+            log.error(e.getMessage(), e);
+            throw new BaseCaidaException("There's no object with that state");
+        }
+        return res;
+    }
+
+    @Override
+    public Either<ApiError, List<Character>> getByOcupation(String ocupation) {
+        Either<ApiError, List<Character>> res;
+        try {
+            List<Character> characters = StaticLists.characters.stream().filter(character -> character.getOccupations().contains(ocupation)).toList();
+            res = Either.right(characters);
+        }catch (Exception e) {
+            log.error(e.getMessage(), e);
+            throw new BaseCaidaException("There's no object with that ocupation");
+        }
+        return res;
     }
 
 

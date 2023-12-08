@@ -41,7 +41,7 @@ public class ServiceCharacters {
 
     public Either<ApiError, List<Character>> getByState(String stateParam){
         try {
-            Boolean state = Boolean.getBoolean(stateParam);
+            Boolean state = Boolean.parseBoolean(stateParam);
             return daoCharacter.getByState(state);
         }catch (Exception e){
             log.error(e.getMessage(), e);
@@ -49,4 +49,7 @@ public class ServiceCharacters {
         }
     }
 
+    public Either<ApiError,List<Character>> getByOcupation(String ocupation) {
+        return daoCharacter.getByOcupation(ocupation);
+    }
 }
