@@ -53,4 +53,10 @@ public class RestMedia {
         return serviceMedia.getByYear(yearParam).get();
     }
 
+    @GET
+    @Path("/random")
+    public Media getRandom(){
+        return serviceMedia.getRandom().get();
+    }
+
 }
